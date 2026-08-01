@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>みきょう｜白壁ドームとエイジング珈琲の喫茶店｜コンセプトLP</title>
+<meta name="description" content="秋田市仲小路、天井まで続く白壁ドームとアンティーク家具に囲まれた喫茶店「みきょう」。自家焙煎ネルドリップで淹れるエイジング珈琲とオリジナルスイーツを楽しめます。">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f5f0e6">
+<style>
+  :root {
+    --color-plaster: #f5efe4;
+    --color-plaster-deep: #efe6d5;
+    --color-surface: #fbf8f2;
+    --color-ink: #2c2620;
+    --color-muted: #6b6058;
+    --color-arch: #b06a45;
+    --color-arch-deep: #8a4f34;
+    --color-brass: #8c6239;
+    --color-border: #ddd0ba;
+    --color-proposal-bg: #ebf0e9;
+    --color-proposal-border: #6f8a6c;
+    --color-proposal-ink: #33452f;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--color-plaster);
+    color: var(--color-ink);
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", "游明朝", serif;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+    color: var(--color-ink);
+  }
+
+  p { margin: 0; }
+
+  a {
+    color: var(--color-arch-deep);
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible {
+    outline: 3px solid var(--color-arch-deep);
+    outline-offset: 3px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .media {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero-media {
+    aspect-ratio: 4 / 3;
+    max-width: 680px;
+    margin: 0 auto 12px;
+    box-shadow: 0 10px 30px rgba(44, 38, 32, 0.14);
+  }
+  .card-media {
+    aspect-ratio: 4 / 3;
+    margin-bottom: 14px;
+  }
+  .specialty-media {
+    aspect-ratio: 16 / 10;
+    margin-bottom: 8px;
+  }
+  .final-media {
+    aspect-ratio: 16 / 9;
+    max-width: 620px;
+    margin: 24px auto 8px;
+  }
+  .img-caption {
+    font-size: 12px;
+    color: var(--color-muted);
+    text-align: center;
+    margin: 0 0 16px;
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 clamp(16px, 5vw, 32px);
+  }
+
+  /* ------- skip link ------- */
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: var(--color-ink);
+    color: var(--color-surface);
+    padding: 10px 16px;
+    z-index: 100;
+  }
+  .skip-link:focus {
+    left: 14px;
+    top: 14px;
+  }
+
+  /* ------- proposal label bar ------- */
+  .proposal-flag {
+    background: var(--color-ink);
+    color: var(--color-surface);
+    text-align: center;
+    font-size: clamp(11px, 3vw, 13px);
+    letter-spacing: 0.06em;
+    padding: 8px clamp(10px, 4vw, 20px);
+    line-height: 1.6;
+  }
+
+  /* ------- header ------- */
+  header.site-header {
+    padding: 20px 0 16px;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .site-header .container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .site-header .brand {
+    font-size: clamp(20px, 5vw, 24px);
+    letter-spacing: 0.1em;
+  }
+  .site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    font-size: 13px;
+  }
+  .site-nav a {
+    text-decoration: none;
+    color: var(--color-muted);
+    border-bottom: 1px solid transparent;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus-visible {
+    color: var(--color-arch-deep);
+    border-bottom-color: var(--color-arch-deep);
+  }
+  .back-top {
+    font-size: 12px;
+    color: var(--color-muted);
+    text-decoration: underline;
+    overflow-wrap: anywhere;
+  }
+
+  /* ------- arch motif divider ------- */
+  .arch-row {
+    display: flex;
+    justify-content: center;
+    padding: 0 4px;
+    margin: 0 auto;
+    max-width: 760px;
+  }
+  .arch-row span {
+    flex: 1 1 auto;
+    max-width: 46px;
+    aspect-ratio: 1 / 1;
+    background: var(--color-arch);
+    border-radius: 100% 100% 0 0;
+    margin: 0 2px;
+    opacity: 0.85;
+  }
+
+  /* ------- hero ------- */
+  .hero {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(32px, 8vh, 64px) 0 clamp(24px, 6vh, 40px);
+    background:
+      radial-gradient(circle at 50% 0%, var(--color-plaster-deep) 0%, var(--color-plaster) 70%);
+    position: relative;
+  }
+  .hero .eyebrow {
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    color: var(--color-arch-deep);
+    margin-bottom: 12px;
+  }
+  .hero h1 {
+    text-align: center;
+    font-size: clamp(30px, 8vw, 46px);
+    letter-spacing: 0.08em;
+    margin-top: 10px;
+  }
+  .hero .catch {
+    text-align: center;
+    margin-top: 14px;
+    font-size: clamp(15px, 4vw, 18px);
+    color: var(--color-muted);
+  }
+  .hero .lead {
+    text-align: center;
+    max-width: 520px;
+    margin: 20px auto 0;
+    font-size: clamp(14px, 3.6vw, 16px);
+  }
+  .cta-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 340px;
+    margin: 28px auto 0;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    line-height: 1.4;
+    cursor: pointer;
+    font-family: inherit;
+    background: transparent;
+  }
+  .btn-primary {
+    background: var(--color-arch-deep);
+    color: var(--color-surface);
+  }
+  .btn-primary:hover { background: var(--color-arch); }
+  .btn-outline {
+    background: transparent;
+    border-color: var(--color-arch-deep);
+    color: var(--color-arch-deep);
+  }
+  .btn-outline:hover { background: var(--color-plaster-deep); }
+
+  /* ------- generic section ------- */
+  section {
+    padding: clamp(48px, 9vh, 88px) 0;
+  }
+  .section-label {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    color: var(--color-arch-deep);
+    margin-bottom: 10px;
+    display: block;
+  }
+  .section-title {
+    font-size: clamp(22px, 6vw, 30px);
+    margin-bottom: 22px;
+  }
+  .section-text {
+    max-width: 620px;
+    font-size: 15.5px;
+  }
+  .section-text + .section-text { margin-top: 14px; }
+
+  .surface {
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  /* ------- strengths ------- */
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 24px;
+  }
+  .strength-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: clamp(18px, 5vw, 26px);
+    box-shadow: 0 2px 10px rgba(44, 38, 32, 0.05);
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .strength-card .num {
+    font-size: 12px;
+    color: var(--color-arch-deep);
+    letter-spacing: 0.1em;
+  }
+  .strength-card h3 {
+    font-size: 18px;
+    margin: 8px 0 10px;
+  }
+  .strength-card p {
+    font-size: 14.5px;
+    color: var(--color-muted);
+  }
+  .strength-card .value-tag {
+    display: inline-block;
+    margin-top: auto;
+    padding-top: 14px;
+    font-size: 12.5px;
+    color: var(--color-arch-deep);
+    border-top: 1px solid var(--color-border);
+    width: 100%;
+  }
+
+  /* ------- story ------- */
+  .story-list {
+    margin-top: 20px;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .story-list li {
+    padding-left: 18px;
+    border-left: 2px solid var(--color-arch);
+    font-size: 15px;
+  }
+  .story-list .year {
+    display: block;
+    font-size: 12.5px;
+    color: var(--color-arch-deep);
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+  }
+
+  /* ------- specialty ------- */
+  .specialty-block {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: clamp(20px, 6vw, 32px);
+    margin-top: 20px;
+  }
+  .specialty-block + .specialty-block { margin-top: 18px; }
+  .specialty-kicker {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--color-arch-deep);
+  }
+  .specialty-block h3 {
+    font-size: 20px;
+    margin: 8px 0 12px;
+  }
+  .specialty-block p { font-size: 15px; }
+  .specialty-block p + p { margin-top: 10px; }
+  .specialty-meta {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--color-border);
+    font-size: 13.5px;
+    color: var(--color-muted);
+  }
+
+  /* ------- experience ------- */
+  .exp-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 22px;
+  }
+  .exp-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 16px;
+    border-radius: 8px;
+    background: var(--color-plaster-deep);
+  }
+  .exp-item .mark {
+    flex: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 50% 50% 4px 4px;
+    background: var(--color-arch);
+    opacity: 0.85;
+  }
+  .exp-item p { font-size: 14.5px; }
+  .exp-item h3 { font-size: 16px; margin-bottom: 6px; }
+
+  /* ------- proposal ------- */
+  .proposal-section {
+    background: var(--color-proposal-bg);
+    border-top: 1px solid var(--color-proposal-border);
+    border-bottom: 1px solid var(--color-proposal-border);
+  }
+  .proposal-badge {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--color-surface);
+    background: var(--color-proposal-border);
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+  .proposal-section .section-title { color: var(--color-proposal-ink); }
+  .proposal-card {
+    background: var(--color-surface);
+    border: 1px dashed var(--color-proposal-border);
+    border-radius: 10px;
+    padding: clamp(18px, 5vw, 28px);
+    margin-top: 20px;
+  }
+  .proposal-name {
+    font-size: 19px;
+    color: var(--color-proposal-ink);
+    margin-bottom: 16px;
+  }
+  .proposal-dl {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin: 0;
+  }
+  .proposal-dl dt {
+    font-size: 12.5px;
+    letter-spacing: 0.06em;
+    color: var(--color-proposal-border);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .proposal-dl dd {
+    margin: 0;
+    font-size: 14.5px;
+    color: var(--color-ink);
+  }
+  .proposal-note {
+    margin-top: 20px;
+    padding: 14px 16px;
+    background: var(--color-proposal-bg);
+    border-left: 3px solid var(--color-proposal-border);
+    font-size: 13px;
+    color: var(--color-proposal-ink);
+  }
+
+  /* ------- reservation demo widget ------- */
+  .demo-widget {
+    margin-top: 24px;
+    border: 1px solid var(--color-proposal-border);
+    border-radius: 10px;
+    background: var(--color-surface);
+    padding: clamp(18px, 5vw, 26px);
+  }
+  .demo-widget-title {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: var(--color-proposal-border);
+    margin-bottom: 10px;
+  }
+  .demo-intro p {
+    font-size: 14px;
+    color: var(--color-muted);
+    margin-bottom: 16px;
+  }
+  .demo-progress {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: var(--color-proposal-border);
+    margin-bottom: 14px;
+  }
+  .demo-step fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 18px;
+  }
+  .demo-step legend {
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", "游明朝", serif;
+    font-size: 16px;
+    margin-bottom: 12px;
+    padding: 0;
+  }
+  .demo-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .demo-option {
+    display: block;
+    position: relative;
+  }
+  .demo-option input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+  }
+  .demo-option span {
+    display: block;
+    padding: 12px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-size: 14.5px;
+    background: var(--color-plaster);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+  .demo-option input:checked + span {
+    border-color: var(--color-proposal-border);
+    background: var(--color-proposal-bg);
+    color: var(--color-proposal-ink);
+    font-weight: 600;
+  }
+  .demo-option input:focus-visible + span {
+    outline: 3px solid var(--color-arch-deep);
+    outline-offset: 2px;
+  }
+  .demo-nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .demo-nav .btn { flex: 1 1 120px; }
+  .demo-error {
+    font-size: 13px;
+    color: #9a3b2a;
+    margin-bottom: 12px;
+  }
+  .demo-summary {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .demo-summary dt {
+    font-size: 12px;
+    color: var(--color-muted);
+  }
+  .demo-summary dd {
+    margin: 2px 0 0;
+    font-size: 15px;
+  }
+  .demo-disclaimer {
+    margin-top: 16px;
+    padding: 12px 14px;
+    background: var(--color-proposal-bg);
+    border-left: 3px solid var(--color-proposal-border);
+    font-size: 13px;
+    color: var(--color-proposal-ink);
+  }
+  .demo-status {
+    position: absolute;
+    left: -9999px;
+  }
+
+  /* ------- info ------- */
+  .info-table {
+    margin-top: 22px;
+    border-top: 1px solid var(--color-border);
+  }
+  .info-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .info-row dt {
+    font-size: 12.5px;
+    color: var(--color-muted);
+    letter-spacing: 0.06em;
+  }
+  .info-row dd {
+    margin: 0;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+  }
+  .info-row dd a {
+    text-decoration: underline;
+  }
+
+  .final-cta {
+    text-align: center;
+  }
+  .final-cta .section-text {
+    margin: 0 auto 24px;
+    text-align: center;
+  }
+  .final-cta .cta-group { max-width: 360px; }
+
+  /* ------- footer ------- */
+  footer.site-footer {
+    background: var(--color-ink);
+    color: var(--color-plaster-deep);
+    padding: 32px 0;
+    text-align: center;
+    font-size: 13px;
+  }
+  footer.site-footer .brand {
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", "游明朝", serif;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+  footer.site-footer a {
+    color: var(--color-plaster-deep);
+    overflow-wrap: anywhere;
+  }
+  footer.site-footer .copyright {
+    margin-top: 12px;
+    color: #a9a094;
+    font-size: 12px;
+  }
+
+  @media (min-width: 640px) {
+    .card-grid { grid-template-columns: repeat(2, 1fr); }
+    .exp-grid { grid-template-columns: repeat(3, 1fr); }
+    .cta-group { flex-direction: row; max-width: none; justify-content: center; }
+    .btn { flex: 0 1 220px; }
+    .proposal-dl { grid-template-columns: repeat(2, 1fr); }
+    .demo-options { flex-direction: row; flex-wrap: wrap; }
+    .demo-option { flex: 1 1 45%; }
+    .demo-summary { grid-template-columns: repeat(2, 1fr); }
+    .site-header .container { flex-direction: row; align-items: center; justify-content: space-between; }
+    #strengths .container { max-width: 1080px; }
+  }
+
+  @media (min-width: 900px) {
+    .card-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">本文へ移動</a>
+
+<!-- 提案用ラベル -->
+<div class="proposal-flag" role="note">
+  CONCEPT LP／店舗向け提案用ページ・本ページには未導入の提案が含まれます
+</div>
+
+<!-- ヘッダー -->
+<header class="site-header">
+  <div class="container">
+    <p class="brand">みきょう</p>
+    <nav class="site-nav" aria-label="ページ内メニュー">
+      <ul>
+        <li><a href="#concept">コンセプト</a></li>
+        <li><a href="#strengths">強み</a></li>
+        <li><a href="#story">ストーリー</a></li>
+        <li><a href="#specialty">一押し</a></li>
+        <li><a href="#proposal">新サービス提案</a></li>
+        <li><a href="#info">店舗情報</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ファーストビュー -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <p class="eyebrow">秋田市 仲小路</p>
+      <div class="media hero-media">
+        <img src="images/dome-interior.jpg" alt="白壁とアーチの空間を表現したイメージ画像" width="1200" height="900" fetchpriority="high">
+      </div>
+      <p class="img-caption">※店舗の世界観を表現したイメージ画像です</p>
+      <h1 id="hero-title">みきょう</h1>
+      <p class="catch">白壁のドームに囲まれ、エイジング珈琲をゆっくりと。</p>
+      <p class="lead">
+        天井まで続く白壁ドームとアンティーク家具が生む、みきょうならではの空間。自家焙煎ネルドリップで丁寧に淹れるエイジング珈琲を、オリジナルスイーツとともにお楽しみいただけます。
+      </p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="https://www.instagram.com/mikyo_cafe/" target="_blank" rel="noopener noreferrer">Instagramを見る</a>
+        <a class="btn btn-outline" href="https://www.mikyo.jp/cafe_mikyo/" target="_blank" rel="noopener noreferrer">公式サイトを見る</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="arch-row" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- コンセプト -->
+  <section id="concept" aria-labelledby="concept-title">
+    <div class="container">
+      <span class="section-label">CONCEPT</span>
+      <h2 id="concept-title" class="section-title">大切にしていること</h2>
+      <p class="section-text">
+        天井まで続く白壁ドームと、時を重ねた木の家具や床がマッチングする、みきょうだけの世界観。その中で、自家焙煎ネルドリップで丁寧に淹れるエイジング珈琲を、当店でしか味わえないオリジナルスイーツとともに楽しんでいただくことを大切にしています。
+      </p>
+    </div>
+  </section>
+
+  <!-- 企業・店舗の強み -->
+  <section id="strengths" class="surface" aria-labelledby="strengths-title">
+    <div class="container">
+      <span class="section-label">STRENGTHS</span>
+      <h2 id="strengths-title" class="section-title">公式情報から見える、みきょうの強み</h2>
+      <p class="section-text">
+        確認できる公式情報をもとに整理した、3つの特徴です。
+        <br><small>※掲載画像は店舗の世界観を表現したイメージです。</small>
+      </p>
+
+      <div class="card-grid">
+        <article class="strength-card">
+          <div class="media card-media">
+            <img src="images/arch-hall.jpg" alt="白壁のアーチが連なる空間を表現したイメージ画像" loading="lazy" width="1200" height="900">
+          </div>
+          <span class="num">01</span>
+          <h3>白壁ドームとアンティーク家具の空間</h3>
+          <p>天井まで続く白壁ドームと、時を重ねた木の家具・床が調和する、みきょうだけの世界観が公式サイトで紹介されています。</p>
+          <span class="value-tag">街なかにいながら、異国情緒あふれる非日常のひとときを過ごせます。</span>
+        </article>
+        <article class="strength-card">
+          <div class="media card-media">
+            <img src="images/aging-coffee.jpg" alt="熟成したコーヒー豆とネルドリップ珈琲を表現したイメージ画像" loading="lazy" width="1200" height="800">
+          </div>
+          <span class="num">02</span>
+          <h3>自家焙煎ネルドリップのエイジング珈琲</h3>
+          <p>自家焙煎ネルドリップで丁寧に淹れるエイジング珈琲が、公式情報で店舗を象徴する商品として紹介されています。</p>
+          <span class="value-tag">時間をかけて熟成した豆を、手間ひまかけて抽出した一杯を味わえます。</span>
+        </article>
+        <article class="strength-card">
+          <div class="media card-media">
+            <img src="images/boutique-interior.jpg" alt="ブティック空間の雰囲気を表現したイメージ画像" loading="lazy" width="1200" height="900">
+          </div>
+          <span class="num">03</span>
+          <h3>ブティックとひとつになった空間</h3>
+          <p>カフェとブティック「MIKYO」が、ひとつの建物の中で運営されています。</p>
+          <span class="value-tag">喫茶とお買い物、ふたつの時間をひとつの場所で楽しめます。</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ブランドストーリー -->
+  <section id="story" aria-labelledby="story-title">
+    <div class="container">
+      <span class="section-label">STORY</span>
+      <h2 id="story-title" class="section-title">みきょうのあゆみ</h2>
+      <p class="section-text">
+        昭和から続く喫茶の文化と精神を、今に受け継いでいます。
+      </p>
+      <ul class="story-list">
+        <li>
+          <span class="year">1953年</span>
+          川反地区にて「カフェみきょう」として開業しました。
+        </li>
+        <li>
+          <span class="year">1988年</span>
+          現在の仲小路の地へ移転しました。
+        </li>
+        <li>
+          <span class="year">2020年</span>
+          30年以上にわたり店長を務めた桜庭榮美氏が、昭和から続く文化や精神を残すため事業を引き継ぎました。
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="arch-row" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- 一押し商品・サービス -->
+  <section id="specialty" class="surface" aria-labelledby="specialty-title">
+    <div class="container">
+      <span class="section-label">SPECIALTY</span>
+      <h2 id="specialty-title" class="section-title">特に注目したい、珈琲とひととき</h2>
+
+      <div class="specialty-block">
+        <div class="media specialty-media">
+          <img src="images/nel-drip-coffee.jpg" alt="ネルドリップ珈琲の抽出をイメージした画像" loading="lazy" width="1200" height="750">
+        </div>
+        <p class="img-caption">※店舗の世界観を表現したイメージ画像です</p>
+        <p class="specialty-kicker">一押し商品</p>
+        <h3>自家焙煎ネルドリップのエイジング珈琲</h3>
+        <p>時間をかけて熟成させた豆を、ネルドリップで丁寧に抽出する、店舗を象徴する一杯です。</p>
+        <p>手間を惜しまず淹れた珈琲を、ゆっくりと味わいたい方におすすめです。</p>
+        <p class="specialty-meta">価格・ご利用方法は、公式サイトまたはInstagramにてご確認ください。</p>
+      </div>
+
+      <div class="specialty-block">
+        <div class="media specialty-media">
+          <img src="images/sweets-cake.jpg" alt="珈琲とスイーツのひとときを表現したイメージ画像" loading="lazy" width="1200" height="750">
+        </div>
+        <p class="img-caption">※店舗の世界観を表現したイメージ画像です</p>
+        <p class="specialty-kicker">一押しサービス</p>
+        <h3>白壁とアーチに包まれる喫茶のひととき</h3>
+        <p>白壁とアーチが印象的な非日常空間で、珈琲やあんみつ、ケーキなどをゆっくりと楽しめる喫茶サービスです。</p>
+        <p>一人の時間を大切にしたい方、ゆったりとお茶を楽しみたい方に向いています。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 店舗での過ごし方 -->
+  <section id="experience" aria-labelledby="experience-title">
+    <div class="container">
+      <span class="section-label">HOW TO ENJOY</span>
+      <h2 id="experience-title" class="section-title">みきょうでの過ごし方</h2>
+      <div class="exp-grid">
+        <div class="exp-item">
+          <span class="mark" aria-hidden="true"></span>
+          <div>
+            <h3>珈琲をじっくり味わう</h3>
+            <p>ネルドリップで淹れるエイジング珈琲を、白壁ドームの空間で味わえます。</p>
+          </div>
+        </div>
+        <div class="exp-item">
+          <span class="mark" aria-hidden="true"></span>
+          <div>
+            <h3>オリジナルスイーツでひと息</h3>
+            <p>あんみつやケーキなど、当店ならではのスイーツとともにくつろげます。</p>
+          </div>
+        </div>
+        <div class="exp-item">
+          <span class="mark" aria-hidden="true"></span>
+          <div>
+            <h3>1階のブティックにも立ち寄る</h3>
+            <p>同じ建物1階のブティック「MIKYO」にも足を運べます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 新サービス提案 -->
+  <section id="proposal" class="proposal-section" aria-labelledby="proposal-title">
+    <div class="container">
+      <span class="proposal-badge">PROPOSAL・導入アイデア</span>
+      <h2 id="proposal-title" class="section-title">この店舗ならではの、今後の選択肢</h2>
+      <p class="section-text">
+        既存の魅力を生かしながら、小さく試せる新サービスの提案です。
+      </p>
+
+      <div class="proposal-card">
+        <p class="proposal-name">みきょう Web予約サービス（案）</p>
+        <dl class="proposal-dl">
+          <div>
+            <dt>対象となるお客様</dt>
+            <dd>事前に席や時間を確保して、ゆったりと過ごしたい方</dd>
+          </div>
+          <div>
+            <dt>解決する課題</dt>
+            <dd>満席で入店できない、行きたいイベントの日程を逃してしまうといった不便</dd>
+          </div>
+          <div>
+            <dt>サービス内容</dt>
+            <dd>席の予約、限定スイーツの取り置き、イベント参加をまとめてWebから申し込める仕組み</dd>
+          </div>
+          <div>
+            <dt>店舗の強みとの相性</dt>
+            <dd>白壁ドームの空間やエイジング珈琲という一押しの魅力を、事前に確実に体験してもらえます</dd>
+          </div>
+          <div>
+            <dt>お客様のメリット</dt>
+            <dd>来店前に席や商品を確保でき、当日の不安が減ります</dd>
+          </div>
+          <div>
+            <dt>店舗側のメリット</dt>
+            <dd>来店人数や需要をあらかじめ把握しやすくなります</dd>
+          </div>
+          <div>
+            <dt>小さく始める方法</dt>
+            <dd>まずは混みやすい時間帯限定で、簡易な予約フォームから試すことができます</dd>
+          </div>
+          <div>
+            <dt>実施前に確認すべき点</dt>
+            <dd>客席数や運用体制に合わせた予約枠の設定、スタッフが対応できる範囲の確認</dd>
+          </div>
+        </dl>
+        <p class="proposal-note">本内容は店舗運営者向けの導入提案です。現在提供中のサービスではありません。</p>
+
+        <!-- 予約デモ試作 -->
+        <div class="demo-widget" id="reservation-demo">
+          <p class="demo-widget-title">試作デモ（動く簡易プロトタイプ）</p>
+          <div aria-live="polite" class="demo-status" id="demo-status"></div>
+
+          <div class="demo-intro" id="demo-intro">
+            <p>提案内容のイメージをつかんでいただくため、実際に操作できる簡易デモをご用意しました。送信は行われず、内容も保存されません。</p>
+            <button type="button" class="btn btn-primary" id="demo-start-btn">予約デモを試す</button>
+          </div>
+
+          <form class="demo-form" id="demo-form" hidden novalidate>
+
+            <p class="demo-progress">STEP <span id="demo-current-step">1</span> / 4</p>
+
+            <div class="demo-step" id="demo-step-1" data-step="1">
+              <fieldset>
+                <legend>1. 利用目的をお選びください</legend>
+                <p class="demo-error" id="demo-error-1" hidden>利用目的を選択してください。</p>
+                <div class="demo-options">
+                  <label class="demo-option"><input type="radio" name="purpose" value="珈琲をゆっくり楽しむ"><span>珈琲をゆっくり楽しむ</span></label>
+                  <label class="demo-option"><input type="radio" name="purpose" value="スイーツと一緒に楽しむ"><span>スイーツと一緒に楽しむ</span></label>
+                  <label class="demo-option"><input type="radio" name="purpose" value="ランチで利用する"><span>ランチで利用する</span></label>
+                  <label class="demo-option"><input type="radio" name="purpose" value="ブティックにも立ち寄る"><span>ブティックにも立ち寄る</span></label>
+                  <label class="demo-option"><input type="radio" name="purpose" value="イベントや特別な日に利用する"><span>イベントや特別な日に利用する</span></label>
+                </div>
+              </fieldset>
+              <div class="demo-nav">
+                <button type="button" class="btn btn-primary demo-next" data-current="1" data-target="2">次へ</button>
+              </div>
+            </div>
+
+            <div class="demo-step" id="demo-step-2" data-step="2" hidden>
+              <fieldset>
+                <legend>2. 希望時間帯をお選びください</legend>
+                <p class="demo-error" id="demo-error-2" hidden>希望時間帯を選択してください。</p>
+                <div class="demo-options">
+                  <label class="demo-option"><input type="radio" name="time" value="11:00〜13:00"><span>11:00〜13:00</span></label>
+                  <label class="demo-option"><input type="radio" name="time" value="13:00〜15:00"><span>13:00〜15:00</span></label>
+                  <label class="demo-option"><input type="radio" name="time" value="15:00〜17:00"><span>15:00〜17:00</span></label>
+                  <label class="demo-option"><input type="radio" name="time" value="17:00〜19:00"><span>17:00〜19:00</span></label>
+                </div>
+              </fieldset>
+              <div class="demo-nav">
+                <button type="button" class="btn btn-outline demo-back" data-target="1">戻る</button>
+                <button type="button" class="btn btn-primary demo-next" data-current="2" data-target="3">次へ</button>
+              </div>
+            </div>
+
+            <div class="demo-step" id="demo-step-3" data-step="3" hidden>
+              <fieldset>
+                <legend>3. 人数をお選びください</legend>
+                <p class="demo-error" id="demo-error-3" hidden>人数を選択してください。</p>
+                <div class="demo-options">
+                  <label class="demo-option"><input type="radio" name="people" value="1名"><span>1名</span></label>
+                  <label class="demo-option"><input type="radio" name="people" value="2名"><span>2名</span></label>
+                  <label class="demo-option"><input type="radio" name="people" value="3名"><span>3名</span></label>
+                  <label class="demo-option"><input type="radio" name="people" value="4名以上"><span>4名以上</span></label>
+                </div>
+              </fieldset>
+              <div class="demo-nav">
+                <button type="button" class="btn btn-outline demo-back" data-target="2">戻る</button>
+                <button type="button" class="btn btn-primary demo-next" data-current="3" data-target="4">次へ</button>
+              </div>
+            </div>
+
+            <div class="demo-step" id="demo-step-4" data-step="4" hidden>
+              <fieldset>
+                <legend>4. 限定スイーツの取り置きを希望しますか</legend>
+                <p class="demo-error" id="demo-error-4" hidden>取り置きの希望を選択してください。</p>
+                <div class="demo-options">
+                  <label class="demo-option"><input type="radio" name="sweets" value="取り置きを希望する"><span>取り置きを希望する</span></label>
+                  <label class="demo-option"><input type="radio" name="sweets" value="希望しない"><span>希望しない</span></label>
+                </div>
+              </fieldset>
+              <div class="demo-nav">
+                <button type="button" class="btn btn-outline demo-back" data-target="3">戻る</button>
+                <button type="button" class="btn btn-primary" id="demo-confirm-btn">内容を確認する</button>
+              </div>
+            </div>
+          </form>
+
+          <div class="demo-result" id="demo-result" hidden>
+            <h4>内容確認（デモ）</h4>
+            <dl class="demo-summary" id="demo-summary"></dl>
+            <p class="demo-disclaimer">本機能は試作デモです。予約は確定されません。</p>
+            <div class="demo-nav">
+              <button type="button" class="btn btn-outline" id="demo-reset-btn">最初からやり直す</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="arch-row" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- 店舗情報 -->
+  <section id="info" aria-labelledby="info-title">
+    <div class="container">
+      <span class="section-label">INFORMATION</span>
+      <h2 id="info-title" class="section-title">店舗情報</h2>
+
+      <dl class="info-table">
+        <div class="info-row">
+          <dt>店舗名</dt>
+          <dd>みきょう（Cafe mikyo）／1階 MIKYO</dd>
+        </div>
+        <div class="info-row">
+          <dt>住所</dt>
+          <dd>秋田県秋田市中通2-1-22</dd>
+        </div>
+        <div class="info-row">
+          <dt>電話番号</dt>
+          <dd><a href="tel:0188363188">018-836-3188</a></dd>
+        </div>
+        <div class="info-row">
+          <dt>営業時間</dt>
+          <dd>11:00〜19:00（ランチタイム 11:30〜14:00）</dd>
+        </div>
+        <div class="info-row">
+          <dt>定休日</dt>
+          <dd>水曜</dd>
+        </div>
+        <div class="info-row">
+          <dt>お支払い方法</dt>
+          <dd>現金</dd>
+        </div>
+        <div class="info-row">
+          <dt>公式サイト</dt>
+          <dd><a href="https://www.mikyo.jp/cafe_mikyo/" target="_blank" rel="noopener noreferrer">https://www.mikyo.jp/cafe_mikyo/</a></dd>
+        </div>
+        <div class="info-row">
+          <dt>Instagram</dt>
+          <dd><a href="https://www.instagram.com/mikyo_cafe/" target="_blank" rel="noopener noreferrer">https://www.instagram.com/mikyo_cafe/</a></dd>
+        </div>
+        <div class="info-row">
+          <dt>ご利用時の注意事項</dt>
+          <dd>お手元の写真以外の撮影はご遠慮ください。</dd>
+        </div>
+      </dl>
+
+      <p class="section-text" style="margin-top: 18px; font-size: 13px; color: var(--color-muted);">
+        最新の営業情報は、店舗の公式案内をご確認ください。
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="final-cta surface" aria-labelledby="final-cta-title">
+    <div class="container">
+      <span class="section-label">VISIT</span>
+      <h2 id="final-cta-title" class="section-title">みきょうを訪ねる</h2>
+      <p class="section-text">
+        白壁ドームに囲まれた喫茶の時間を、ぜひ体験しにお越しください。
+      </p>
+      <div class="media final-media">
+        <img src="images/entrance.jpg" alt="白壁とアーチの入り口をイメージした画像" loading="lazy" width="1200" height="675">
+      </div>
+      <p class="img-caption">※店舗の世界観を表現したイメージ画像です</p>
+      <div class="cta-group">
+        <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=%E7%A7%8B%E7%94%B0%E7%9C%8C%E7%A7%8B%E7%94%B0%E5%B8%82%E4%B8%AD%E9%80%9A2-1-22" target="_blank" rel="noopener noreferrer">地図を見る</a>
+        <a class="btn btn-outline" href="tel:0188363188">電話をかける</a>
+      </div>
+      <p style="margin-top: 24px;">
+        <a class="back-top" href="#main">ページの先頭へ戻る</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- フッター -->
+<footer class="site-footer">
+  <div class="container">
+    <p class="brand">みきょう</p>
+    <p><a href="#main">ページの先頭へ戻る</a></p>
+    <p class="copyright">© みきょう. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- 本ページは提案用コンセプトLPのため、構造化データ（JSON-LD）は掲載していません。
+     店舗側が正式に採用し公開版として運用する際に、実際の情報で追加してください。 -->
+
+<script>
+(function () {
+  "use strict";
+
+  var startBtn = document.getElementById("demo-start-btn");
+  var intro = document.getElementById("demo-intro");
+  var form = document.getElementById("demo-form");
+  var result = document.getElementById("demo-result");
+  var summary = document.getElementById("demo-summary");
+  var resetBtn = document.getElementById("demo-reset-btn");
+  var confirmBtn = document.getElementById("demo-confirm-btn");
+  var status = document.getElementById("demo-status");
+
+  function announce(text) {
+    if (status) { status.textContent = text; }
+  }
+
+  function showStep(n) {
+    var steps = form.querySelectorAll(".demo-step");
+    for (var i = 0; i < steps.length; i++) {
+      steps[i].hidden = steps[i].getAttribute("data-step") !== String(n);
+    }
+    var stepCounter = document.getElementById("demo-current-step");
+    if (stepCounter) { stepCounter.textContent = n; }
+    var current = document.getElementById("demo-step-" + n);
+    if (current) {
+      var legend = current.querySelector("legend");
+      announce("STEP " + n + " / 4 " + (legend ? legend.textContent : ""));
+      var firstInput = current.querySelector("input");
+      if (firstInput) { firstInput.focus(); }
+    }
+  }
+
+  function getChecked(name) {
+    var el = form.querySelector('input[name="' + name + '"]:checked');
+    return el ? el.value : null;
+  }
+
+  if (startBtn) {
+    startBtn.addEventListener("click", function () {
+      intro.hidden = true;
+      form.hidden = false;
+      showStep(1);
+    });
+  }
+
+  var nextButtons = form.querySelectorAll(".demo-next");
+  for (var i = 0; i < nextButtons.length; i++) {
+    nextButtons[i].addEventListener("click", function (e) {
+      var currentStep = e.target.getAttribute("data-current");
+      var targetStep = e.target.getAttribute("data-target");
+      var fieldNameMap = { "1": "purpose", "2": "time", "3": "people" };
+      var fieldName = fieldNameMap[currentStep];
+      var errorEl = document.getElementById("demo-error-" + currentStep);
+
+      if (fieldName && !getChecked(fieldName)) {
+        if (errorEl) { errorEl.hidden = false; }
+        return;
+      }
+      if (errorEl) { errorEl.hidden = true; }
+      showStep(targetStep);
+    });
+  }
+
+  var backButtons = form.querySelectorAll(".demo-back");
+  for (var j = 0; j < backButtons.length; j++) {
+    backButtons[j].addEventListener("click", function (e) {
+      var targetStep = e.target.getAttribute("data-target");
+      showStep(targetStep);
+    });
+  }
+
+  if (confirmBtn) {
+    confirmBtn.addEventListener("click", function () {
+      var errorEl = document.getElementById("demo-error-4");
+      var sweets = getChecked("sweets");
+      if (!sweets) {
+        if (errorEl) { errorEl.hidden = false; }
+        return;
+      }
+      if (errorEl) { errorEl.hidden = true; }
+
+      var purpose = getChecked("purpose");
+      var time = getChecked("time");
+      var people = getChecked("people");
+
+      summary.innerHTML = "";
+      var items = [
+        ["利用目的", purpose],
+        ["希望時間帯", time],
+        ["人数", people],
+        ["限定スイーツの取り置き", sweets]
+      ];
+      for (var k = 0; k < items.length; k++) {
+        var dt = document.createElement("dt");
+        dt.textContent = items[k][0];
+        var dd = document.createElement("dd");
+        dd.textContent = items[k][1];
+        summary.appendChild(dt);
+        summary.appendChild(dd);
+      }
+
+      form.hidden = true;
+      result.hidden = false;
+      announce("内容確認画面を表示しました。本機能は試作デモです。予約は確定されません。");
+      var resultHeading = result.querySelector("h4");
+      if (resultHeading) { resultHeading.setAttribute("tabindex", "-1"); resultHeading.focus(); }
+    });
+  }
+
+  if (resetBtn) {
+    resetBtn.addEventListener("click", function () {
+      var radios = form.querySelectorAll('input[type="radio"]');
+      for (var m = 0; m < radios.length; m++) { radios[m].checked = false; }
+      var errors = form.querySelectorAll(".demo-error");
+      for (var n = 0; n < errors.length; n++) { errors[n].hidden = true; }
+
+      var steps = form.querySelectorAll(".demo-step");
+      for (var s = 0; s < steps.length; s++) {
+        steps[s].hidden = steps[s].getAttribute("data-step") !== "1";
+      }
+      var stepCounter = document.getElementById("demo-current-step");
+      if (stepCounter) { stepCounter.textContent = "1"; }
+
+      result.hidden = true;
+      form.hidden = true;
+      intro.hidden = false;
+      announce("最初の画面に戻りました。");
+      startBtn.focus();
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
