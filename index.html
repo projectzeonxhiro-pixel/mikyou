@@ -20,6 +20,7 @@
     --color-border: #ddd0ba;
     --color-proposal-bg: #ebf0e9;
     --color-proposal-border: #6f8a6c;
+    --color-proposal-text2: #5d745b;  /* 明るい地の上に置く文字用 */
     --color-proposal-ink: #33452f;
   }
 
@@ -127,45 +128,13 @@
     background: var(--color-ink);
     color: var(--color-surface);
     text-align: center;
-    font-size: clamp(11px, 3vw, 13px);
+    font-size: clamp(12px, 3vw, 13px);
     letter-spacing: 0.06em;
-    padding: 8px clamp(10px, 4vw, 20px);
+    padding: 8px clamp(14px, 4vw, 20px);
     line-height: 1.6;
   }
 
   /* ------- header ------- */
-  header.site-header {
-    padding: 20px 0 16px;
-    border-bottom: 1px solid var(--color-border);
-  }
-  .site-header .container {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .site-header .brand {
-    font-size: clamp(20px, 5vw, 24px);
-    letter-spacing: 0.1em;
-  }
-  .site-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 16px;
-    font-size: 13px;
-  }
-  .site-nav a {
-    text-decoration: none;
-    color: var(--color-muted);
-    border-bottom: 1px solid transparent;
-  }
-  .site-nav a:hover,
-  .site-nav a:focus-visible {
-    color: var(--color-arch-deep);
-    border-bottom-color: var(--color-arch-deep);
-  }
   .back-top {
     font-size: 12px;
     color: var(--color-muted);
@@ -198,15 +167,22 @@
     flex-direction: column;
     justify-content: center;
     padding: clamp(32px, 8vh, 64px) 0 clamp(24px, 6vh, 40px);
+    /* 2026-09-26：写真をカードで見せる形から、背景に敷く形へ変えました。
+       ほかの店舗（杉本・モーニン・OLIVE CAFE）と揃えるためです。
+       ★膜（linear-gradient）は必ず残してください。外すと白文字が読めなくなります。 */
     background:
-      radial-gradient(circle at 50% 0%, var(--color-plaster-deep) 0%, var(--color-plaster) 70%);
+      linear-gradient(172deg, rgba(34,27,21,0.84) 0%, rgba(34,27,21,0.78) 42%, rgba(26,20,16,0.90) 100%),
+      url('images/entrance.jpg');
+    background-size: cover;
+    background-position: center 38%;
+    color: #f7f2e8;
     position: relative;
   }
   .hero .eyebrow {
     text-align: center;
     font-size: 12px;
     letter-spacing: 0.2em;
-    color: var(--color-arch-deep);
+    color: #e9ddca;
     margin-bottom: 12px;
   }
   .hero h1 {
@@ -214,18 +190,34 @@
     font-size: clamp(30px, 8vw, 46px);
     letter-spacing: 0.08em;
     margin-top: 10px;
+    color: #fcf8f0;
   }
   .hero .catch {
     text-align: center;
     margin-top: 14px;
     font-size: clamp(15px, 4vw, 18px);
-    color: var(--color-muted);
+    color: #f2e9da;
   }
   .hero .lead {
     text-align: center;
     max-width: 520px;
     margin: 20px auto 0;
     font-size: clamp(14px, 3.6vw, 16px);
+    color: #efe5d4;
+  }
+  .hero .img-caption {
+    color: #e2d8c6;
+    margin: 22px 0 0;
+  }
+  .hero .btn-outline {
+    border-color: rgba(247, 242, 232, 0.8);
+    color: #f7f2e8;
+  }
+  .hero .btn-outline:hover {
+    background: rgba(247, 242, 232, 0.16);
+  }
+  .hero .btn-primary {
+    color: #fdfaf4;
   }
   .cta-group {
     display: flex;
@@ -413,7 +405,7 @@
   }
   .proposal-badge {
     display: inline-block;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 0.14em;
     color: var(--color-surface);
     background: var(--color-proposal-border);
@@ -443,7 +435,7 @@
   .proposal-dl dt {
     font-size: 12.5px;
     letter-spacing: 0.06em;
-    color: var(--color-proposal-border);
+    color: var(--color-proposal-text2);
     font-weight: 600;
     margin-bottom: 4px;
   }
@@ -472,7 +464,7 @@
   .demo-widget-title {
     font-size: 12px;
     letter-spacing: 0.1em;
-    color: var(--color-proposal-border);
+    color: var(--color-proposal-text2);
     margin-bottom: 10px;
   }
   .demo-intro p {
@@ -483,7 +475,7 @@
   .demo-progress {
     font-size: 12px;
     letter-spacing: 0.08em;
-    color: var(--color-proposal-border);
+    color: var(--color-proposal-text2);
     margin-bottom: 14px;
   }
   .demo-step fieldset {
@@ -639,7 +631,6 @@
     .demo-options { flex-direction: row; flex-wrap: wrap; }
     .demo-option { flex: 1 1 45%; }
     .demo-summary { grid-template-columns: repeat(2, 1fr); }
-    .site-header .container { flex-direction: row; align-items: center; justify-content: space-between; }
     #strengths .container { max-width: 1080px; }
   }
 
@@ -650,6 +641,10 @@
   @media (prefers-reduced-motion: reduce) {
     * { animation: none !important; transition: none !important; }
   }
+
+  /* ===== べた塗り背景のボタン・ラベル（コントラスト比 4.5 以上を確保） ===== */
+  .proposal-badge { background: #5b7159; }
+
 </style>
 </head>
 <body>
@@ -662,21 +657,6 @@
 </div>
 
 <!-- ヘッダー -->
-<header class="site-header">
-  <div class="container">
-    <p class="brand">みきょう</p>
-    <nav class="site-nav" aria-label="ページ内メニュー">
-      <ul>
-        <li><a href="#concept">コンセプト</a></li>
-        <li><a href="#strengths">強み</a></li>
-        <li><a href="#story">ストーリー</a></li>
-        <li><a href="#specialty">一押し</a></li>
-        <li><a href="#proposal">新サービス提案</a></li>
-        <li><a href="#info">店舗情報</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
 
 <main id="main">
 
@@ -684,10 +664,6 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="container">
       <p class="eyebrow">秋田市 仲小路</p>
-      <div class="media hero-media">
-        <img src="images/dome-interior.jpg" alt="白壁とアーチの空間を表現したイメージ画像" width="1200" height="900" fetchpriority="high">
-      </div>
-      <p class="img-caption">※店舗の世界観を表現したイメージ画像です</p>
       <h1 id="hero-title">みきょう</h1>
       <p class="catch">白壁のドームに囲まれ、エイジング珈琲をゆっくりと。</p>
       <p class="lead">
@@ -697,6 +673,7 @@
         <a class="btn btn-primary" href="https://www.instagram.com/mikyo_cafe/" target="_blank" rel="noopener noreferrer">Instagramを見る</a>
         <a class="btn btn-outline" href="https://www.mikyo.jp/cafe_mikyo/" target="_blank" rel="noopener noreferrer">公式サイトを見る</a>
       </div>
+      <p class="img-caption">※背景は、店舗の世界観を表現したイメージ画像です</p>
     </div>
   </section>
 
@@ -977,7 +954,7 @@
           </form>
 
           <div class="demo-result" id="demo-result" hidden>
-            <h4>内容確認（デモ）</h4>
+            <h3>内容確認（デモ）</h3>
             <dl class="demo-summary" id="demo-summary"></dl>
             <p class="demo-disclaimer">本機能は試作デモです。予約は確定されません。</p>
             <div class="demo-nav">
@@ -1053,7 +1030,7 @@
         白壁ドームに囲まれた喫茶の時間を、ぜひ体験しにお越しください。
       </p>
       <div class="media final-media">
-        <img src="images/entrance.jpg" alt="白壁とアーチの入り口をイメージした画像" loading="lazy" width="1200" height="675">
+        <img src="images/dome-interior.jpg" alt="白壁とアーチの空間を表現したイメージ画像" loading="lazy" width="1200" height="900">
       </div>
       <p class="img-caption">※店舗の世界観を表現したイメージ画像です</p>
       <div class="cta-group">
@@ -1185,7 +1162,7 @@
       form.hidden = true;
       result.hidden = false;
       announce("内容確認画面を表示しました。本機能は試作デモです。予約は確定されません。");
-      var resultHeading = result.querySelector("h4");
+      var resultHeading = result.querySelector("h3");
       if (resultHeading) { resultHeading.setAttribute("tabindex", "-1"); resultHeading.focus(); }
     });
   }
